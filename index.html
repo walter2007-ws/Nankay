@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nankay | Arte en cemento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    :root {
+      --cemento: #8f8c85;
+      --carbon: #262625;
+      --arena: #ebe8e2;
+      --musgo: #4f6b45;
+      --musgo-oscuro: #3d5535;
+      --bs-body-font-family: "Work Sans", system-ui, sans-serif;
+      --bs-body-bg: var(--arena);
+      --bs-body-color: var(--carbon);
+    }
+    h1, h2, h3 { font-family: "Archivo", sans-serif; letter-spacing: -0.02em; }
+    .hero { background: var(--carbon); color: var(--arena); }
+    .hero h1 { font-weight: 800; font-size: clamp(2.2rem, 9vw, 6rem); line-height: .95; }
+    .hero .lead { color: var(--cemento); max-width: 28ch; font-size: clamp(1rem, 3.5vw, 1.5rem); }
+    .hero-logo { width: 100%; max-width: 260px; aspect-ratio: 1; object-fit: cover; }
+    .hero-banner { width: 100%; max-height: 360px; object-fit: cover; }
+
+    .btn-musgo { background: var(--musgo); color: #fff; border: 0; font-weight: 500; }
+    .btn-musgo:hover, .btn-musgo:focus { background: var(--musgo-oscuro); color: #fff; }
+    .btn:focus-visible, .form-control:focus { box-shadow: 0 0 0 .25rem rgba(79,107,69,.4); border-color: var(--musgo); }
+
+    .seccion { padding: 4.5rem 0; }
+    .seccion h2 { font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    .seccion .bloque h2 {
+      font-size: clamp(1.1rem, 5vw, 2.6rem);
+      overflow-wrap: anywhere;   /* evita que una palabra se salga de la caja */
+      hyphens: auto;
+      margin-bottom: 0;
+    }
+    .bloque { padding: 1rem; }  
+    @media (min-width: 768px) {
+      .bloque { padding: 3rem; }
+    }
+    .seccion p { max-width: 60ch; }
+    .bloque { background: #f6f4f0; border-left: 6px solid var(--musgo); }
+    .img-producto { width: 100%; max-height: 340px; object-fit: cover; }
+    .img-maceta { max-height: 380px; width: auto; max-width: 100%; }
+    .mapa { width: 100%; height: 260px; border: 0; }
+
+    .form-label { font-weight: 500; }
+    .form-control { background: #fff; border-color: var(--cemento); }
+
+    footer { background: var(--carbon); color: var(--cemento); }
+    footer a { color: var(--arena); }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="hero" id="inicio">
+    <div class="container py-4 py-md-5">
+      <div class="row align-items-center g-3 g-md-5">
+        <div class="col-5 col-md-4">
+          <img src="img/nankay.jpg" alt="Logo Nankay" class="hero-logo img-fluid rounded-circle border border-3 border-secondary">
+        </div>
+        <div class="col-7 col-md-8">
+          <h1>Nankay</h1>
+          <p class="lead mt-2 mb-0">Tú imaginas, nosotros lo creamos.</p>
+        </div>
+      </div>
+    </div>
+    <img src="img/Gemini_Generated_Image_bur2yhbur2yhbur2.jpg" alt="Imagen representativa de Nankay" class="hero-banner">
+  </header>
+
+  <main>
+    <!-- Productos -->
+    <section class="seccion" id="productos">
+    <div class="container">
+
+      <div class="row align-items-center g-3 g-md-5 mb-5">
+        <div class="col-5 text-center">
+          <img src="img/maceta.png" alt="Maceta de cemento" class="img-maceta rounded-circle shadow-sm">
+        </div>
+        <div class="col-7">
+          <div class="bloque rounded-end"><h2>Macetas de cemento</h2></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center g-3 g-md-5 mb-5">
+        <div class="col-7">
+          <div class="bloque rounded-end"><h2>Velas Artesanales</h2></div>
+        </div>
+        <div class="col-5">
+          <img src="img/velas.png" alt="Velas Artesanales" class="img-producto rounded-circle shadow-sm">
+        </div>
+      </div>
+
+      <div class="row align-items-center g-3 g-md-5 mb-5">
+        <div class="col-5 text-center">
+          <img src="img/recuerdos.png" alt="Recuerdo de bodas y cumpleaños" class="img-maceta rounded-circle shadow-sm">
+        </div>
+        <div class="col-7">
+          <div class="bloque rounded-end"><h2>Recuerdos de bodas y cumpleaños</h2></div>
+        </div>
+      </div>
+
+      <div class="row align-items-center g-3 g-md-5 mb-5">
+        <div class="col-7">
+          <div class="bloque rounded-end"><h2>Recuerdos corporativos</h2></div>
+        </div>
+        <div class="col-5">
+          <img src="img/corporativos.png" alt="Recuerdos corporativos" class="img-producto rounded-circle shadow-sm">
+        </div>
+      </div>
+
+      <div class="row align-items-center g-3 g-md-5">
+        <div class="col-5 text-center">
+          <img src="img/minijardines.png" alt="Mini jardines" class="img-maceta rounded-circle shadow-sm">
+        </div>
+        <div class="col-7">
+          <div class="bloque rounded-end"><h2>Mini jardines</h2></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Servicios -->
+    <section class="seccion pt-0" id="servicios">
+        <div class="container mt-5">
+            <div class="row align-items-center g-3 g-md-4">
+                <h2>Lista de servicios</h2>
+                <div class="col-8">
+                    <ul>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="seccion pt-0" id="ubicacion">
+      <div class="container">
+        <div class="row align-items-center g-3 g-md-4">
+          <div class="col-5">
+            <h2>Cómo llegar</h2>
+            <p>Visítanos en nuestro taller y mira de cerca cómo trabajamos el cemento.</p>
+          </div>
+          <div class="col-7">
+            <iframe class="mapa rounded shadow-sm" title="Ubicación de Nankay" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.987599518105!2d-78.59667629068238!3d-0.9075877990798031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461bd1d43a1bb%3A0x2e0b77284ded7ca6!2sNankay%20-%20Arte%20en%20cemento!5e1!3m2!1ses!2sec!4v1792603732794!5m2!1ses!2sec" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Formulario -->
+    <section class="seccion pt-0" id="pedido">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="bg-white rounded p-4 p-md-5 shadow-sm">
+              <h2 class="mb-4">Haz tu pedido</h2>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Juan" required>
+                    <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ej. Pérez" required>
+                    <div class="invalid-feedback">Por favor ingresa tu apellido.</div>
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                  <div class="col-md-7">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+                    <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ej. +593 99 123 4567" required>
+                    <div class="invalid-feedback">Por favor ingresa un número de teléfono.</div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="direccion" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Calle principal, número y secundaria" required>
+                  <div class="invalid-feedback">Por favor ingresa tu dirección.</div>
+                </div>
+
+                <div class="d-grid d-md-flex justify-content-md-end">
+                  <button type="submit" class="btn btn-musgo btn-lg px-5">Enviar pedido</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="py-5" id="contacto">
+    <div class="container text-center">
+      <h3 class="h6 text-light mb-3">Contacto</h3>
+      <ul class="list-unstyled small mb-0">
+        <li class="mb-1">Teléfono: +593 98 765 4321</li>
+        <li class="mb-1">WhatsApp: +593 98 765 4321</li>
+        <li class="mb-1">Correo: contacto@nankay.com</li>
+        <li>Instagram: @nankay.arte</li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
